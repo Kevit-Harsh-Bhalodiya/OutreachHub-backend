@@ -15,7 +15,7 @@ router.delete(
 router.delete("/delete", auth, WorkspaceController.deleteWorkspace);
 router.get("/", auth, WorkspaceController.getWorkspaceById);
 router.post("/addTags", auth, WorkspaceController.addTagToWorkspace);
-routes.patch(
+router.patch(
   "/updateWorkspace",
   auth,
   WorkspaceController.updateWorkspace,
